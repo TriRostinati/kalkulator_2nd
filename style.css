@@ -1,0 +1,104 @@
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#1e3a8a;
+}
+
+/* center layout */
+
+.container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* calculator box */
+
+.calculator{
+  background:#1f2937;
+  padding:25px;
+  border-radius:12px;
+  width:300px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.calculator h2{
+  color:white;
+  text-align:center;
+  margin-bottom:12px;
+}
+
+/* display */
+
+.display{
+  width:100%;
+  height:60px;
+  margin-bottom:15px;
+  font-size:26px;
+  text-align:right;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#111827;
+  color:white;
+  box-sizing:border-box;
+}
+
+/* button grid */
+
+.buttons{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+/* button style */
+
+.btn{
+  padding:16px;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#e5e7eb;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* operator */
+
+.operator{
+  background:#374151;
+  color:white;
+}
+
+/* clear */
+
+.clear{
+  background:#ef4444;
+  color:white;
+}
+
+/* delete */
+
+.delete{
+  background:#f59e0b;
+  color:white;
+}
+
+/* equal */
+
+.equal{
+  background:#22c55e;
+  color:white;
+}
+
+/* 0 button double width */
+
+.btn:nth-child(17){
+  grid-column:span 2;
+}
