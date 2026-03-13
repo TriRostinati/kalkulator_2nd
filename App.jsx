@@ -45,9 +45,9 @@ export default function App() {
   return (
     <div className="container">
 
-      <div className="calculator">
+      <div className="kalkulator">
 
-        <h2>Calculator</h2>
+        <h2>Kalkulator</h2>
 
         <input
           value={display}
